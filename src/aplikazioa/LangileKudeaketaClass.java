@@ -1,5 +1,4 @@
-package aplikazioa;
-
+package Err3;
 public class LangileKudeaketaClass {
 	
 	private String 	Izena;
@@ -7,10 +6,12 @@ public class LangileKudeaketaClass {
 	private int 	Telefonoa;
 	private int 	Mota;
 	private String 	HE;
+	private String Pasahitza;
 
-	public LangileKudeaketaClass( String Izena, String Abizena, int Telefonoa, int Mota, String HE){
+	public LangileKudeaketaClass( String Izena, String Abizena, String Pasahitza, int Telefonoa, int Mota, String HE){
 		this.Izena=Izena;
 		this.Abizena=Abizena;
+		this.Pasahitza=Pasahitza;
 		this.Telefonoa=Telefonoa;
 		this.Mota=Mota;
 		this.HE=HE;
@@ -30,6 +31,14 @@ public class LangileKudeaketaClass {
 
 	public void setAbizena(String abizena) {
 		Abizena = abizena;
+	}
+	
+	public String getPasahitza() {
+		return Pasahitza;
+	}
+
+	public void setPasahitza(String pasahitza) {
+		Pasahitza = pasahitza;
 	}
 
 	public int getTelefonoa() {

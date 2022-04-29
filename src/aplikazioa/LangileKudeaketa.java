@@ -1,5 +1,4 @@
-package aplikazioa;
-
+package Err3;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -38,6 +37,7 @@ public class LangileKudeaketa extends JFrame {
 		
 		private String Izena;
 		private String Abizena;
+		private String Pasahitza;
 		private String Telefonoa;
 		private String Mota;
 		private String HE;
@@ -255,6 +255,6 @@ public class LangileKudeaketa extends JFrame {
 	    int MotaInt = Integer.parseInt(Mota);
 	    
 	//Aurreko datuen informazioa objetua eraikitzeko
-	   datuak = new LangileKudeaketaClass(Izena, Abizena, TelefonoaInt, MotaInt, HE);
+	   datuak = new LangileKudeaketaClass(Izena, Abizena, Pasahitza, TelefonoaInt, MotaInt, HE);
 	}
 }

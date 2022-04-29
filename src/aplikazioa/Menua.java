@@ -1,5 +1,4 @@
-package aplikazioa;
-
+package Err3;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -14,6 +13,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
@@ -63,9 +63,16 @@ public class Menua extends JFrame {
 		JMenuItem JMILangileak = new JMenuItem("Langileak");
 		JMILangileak.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				LangileKudeaketa lk = new LangileKudeaketa();
-				lk.setVisible(true);
-				setVisible(false);
+				LangileKudeaketa lk;
+				try {
+					lk = new LangileKudeaketa();
+					lk.setVisible(true);
+					setVisible(false);
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				
 			}
 
 		});

@@ -1,5 +1,4 @@
-package aplikazioa;
-
+package Err3;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -62,8 +61,8 @@ public class Login extends JFrame {
 		usuarios= new ArrayList<LangileKudeaketaClass> ();
 	
 		// SORTU ERABILTZAIEAK(ADMINISTRATZAILEAK ETA EZ ADMINISTRATZAILEAK)
-		ErabiltzaileakClass erab= new ErabiltzaileakClass("Admin", "Admin123");
-		ErabiltzaileakClass erab1= new ErabiltzaileakClass("Langilea", "Langilea123");
+		LangileKudeaketaClass erab= new LangileKudeaketaClass("Admin","pepe", "Admin123", 4, 4, "a");
+		LangileKudeaketaClass erab1= new LangileKudeaketaClass("Langilea","pepe", "Langilea123", 4, 4, "a");
 		
 		// ARRAYLIST-EAN SARTU
 		usuarios.add(erab);

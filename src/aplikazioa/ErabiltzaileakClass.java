@@ -1,4 +1,4 @@
-package aplikazioa;
+package Err3;
 
 public class ErabiltzaileakClass {
 	
